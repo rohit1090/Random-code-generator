@@ -12,7 +12,7 @@ async function Data() {
             
             const response = await fetch("https://official-joke-api.appspot.com/random_joke");
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
 
             // Hide the loading Animation
             setupDisplay.textContent = data.setup;
