@@ -21,9 +21,10 @@ body{
 }
 
 h1{
-    font-size: 24px;
+    font-size: 32px;
     margin-bottom: 20px;
     color: #e0d9d9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .joke-box{
     background-color: #f3f3f3;
@@ -38,12 +39,12 @@ h1{
    background-color: #d4ff9d;
    border: none;
    color: #1a4651;
-   font-size: 16px;
+   font-size: 20px;
    font-weight: 600;
    transition: all .2s linear;
 }
 #Joke-btn:hover{
-    padding: 14px 20px;
+    padding: 14px 22px;
     border-radius: 8px;
     background-color: #1a4651;
     border: 1px solid #ffffff;
@@ -54,14 +55,16 @@ h1{
 
 #setup{
     color: #555;
-    font-size: 16px;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 #Line{
     color: #0e89b9fb;
-    font-size: 14px;  
+    font-size: 22px;  
     margin-top: 10px; 
     display: none;
-    font-weight: 800;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 /* Loading animation */
