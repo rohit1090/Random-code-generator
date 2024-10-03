@@ -4,12 +4,7 @@ const Line = document.getElementById("Line");
 const loadingSpinner = document.getElementById("loading");
 
 async function Data() {
-    try {
-            // Show loading Animation
-            setupDisplay.textContent = "Loading...";
-            Line.textContent = "";
-            loadingSpinner.style.display = "block";
-            
+    try {   
             const response = await fetch("https://official-joke-api.appspot.com/random_joke");
             const data = await response.json();
             // console.log(data);
@@ -17,6 +12,7 @@ async function Data() {
             // Hide the loading Animation
             setupDisplay.textContent = data.setup;
             Line.textContent = data.punchline; 
+            Line.style.display="block"
             loadingSpinner.style.display = "none"; 
         }
         catch (error) {
@@ -28,6 +24,7 @@ async function Data() {
 }
 
 jokebtn.addEventListener("click", () => {
+        // Show loading Animation
     setupDisplay.textContent = "Loading...";
     Line.textContent = "";
     loadingSpinner.style.display = "block";
